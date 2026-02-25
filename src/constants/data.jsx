@@ -1,11 +1,11 @@
 import { Github, Linkedin, Twitter, Youtube } from "lucide-react";
 
 export const personalInfo = {
-  name: "James Wells",
-  role: "Web Developer",
-  bio: "Hi, I’m James. I'm a Web Developer focused on building fast, elegant, and thoughtful digital experiences. My work blends technical precision with a design-driven mindset to create websites that not only work well but feel great.",
-  email: "jameswells@example.com",
-  location: "USA",
+  name: "Mostafa Ayman",
+  role: "Data Science",
+  bio: "Hi, I’m James. I'm a Web Developer focuseHi, I’m Mostafa. I build desktop apps using JavaFX and work on Data Science, Web Scraping, RAG, and automation with n8n to create practical and interactive digital solutions.d on building fast, elegant, and thoughtful digital experiences. My work blends technical precision with a design-driven mindset to create websites that not only work well but feel great.",
+  email: "moaymn707@gmail.com",
+  location: "EGY",
 };
 
 export const projects = [1, 2, 3, 4, 5, 6];
@@ -14,126 +14,149 @@ export const socialLinks = [
   {
     name: "GitHub",
     icon: Github,
-    link: "#",
+    link: "https://github.com/3bshafey",
     color: "hover:text-white",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    link: "#",
+    link: "https://www.linkedin.com/in/3bshafey",
     color: "hover:text-blue-400",
   },
-  {
-    name: "Twitter",
-    icon: Twitter,
-    link: "#",
-    color: "hover:text-sky-400",
+   {
+    name: "Telegram",
+    icon: Telegram,
+    link: "https://t.me/M3bshafey",
+    color: "hover:text-blue-500",
   },
   {
-    name: "YouTube",
-    icon: Youtube,
-    link: "#",
-    color: "hover:text-red-400",
+    name: "Reddit",
+    icon: Reddit,
+    link: "https://www.reddit.com/user/Ok-Doubt-8985/",
+    color: "hover:text-orange-500",
   },
 ];
 
 export const experiences = [
   {
-    title: "Frontend Developer",
-    company: "Freelance",
-    period: "2023 — Present",
-    desc: "Building fast, accessible, and visually engaging web apps using React, Next.js, and Tailwind CSS. Collaborating with clients to turn design ideas into responsive, high-performance websites.",
+    title: "Data Science Trainee",
+    company: "DEPI",
+    period: "2025 — Present",
+    desc: "Working on data analysis, machine learning fundamentals, and Web Scraping projects. Transforming raw data into actionable insights and practical data-driven solutions.",
     color: "violet",
   },
   {
-    title: "Web Developer Intern",
-    company: "Freelance",
-    period: "2021 — 2023",
-    desc: "Developed internal dashboards and small-scale SaaS tools with React and Node.js. Improved UI performance and introduced reusable component systems for faster development.",
+    title: "Automation Developer (n8n)",
+    company: "Self Study",
+    period: "2025 — Present",
+    desc: "Designing automated workflows and data pipelines using n8n to connect APIs, databases, and AI services efficiently.",
     color: "cyan",
   },
   {
-    title: "UI/UX Designer",
-    company: "Freelance",
-    period: "2019 — 2021",
-    desc: "Designed intuitive, minimal interfaces with a focus on motion and user experience. Helped startups and small businesses bring their brand and web presence to life.",
+    title: "RAG System Trainee",
+    company: "ITI",
+    period: "2025",
+    desc: "Built Retrieval-Augmented Generation (RAG) systems integrating external data sources with AI models to develop intelligent and context-aware applications.",
     color: "pink",
+  },
+  {
+    title: "JavaFX Desktop Developer",
+    company: "AASTMT Academy",
+    period: "2024",
+    desc: "Developed interactive desktop applications using JavaFX with database integration and real-time system simulations, focusing on clean architecture and responsive UI design.",
+    color: "orange",
   },
 ];
 
 export const tools = [
-  "Figma – UI/UX Design",
-  "Adobe After Effects – Motion Design",
   "VS Code – Code Editor",
   "Git & GitHub – Version Control",
-  "Postman – API Testing",
-  "Docker – Containerization",
+  "n8n – Workflow Automation",
+  "Jupyter Notebook – Data Analysis & Visualization",
+  "SQL / MySQL / PostgreSQL – Databases",
   "Notion – Productivity",
+  "Postman – API Testing",
 ];
 
 export const goals = [
-  "Launch my own web agency",
-  "Start a web development Youtube channel",
-  "Gain more customers",
-  "Learn new frameworks and libraries",
+  "Showcase my Data Science, Web Scraping, RAG, and JavaFX projects",
+  "Build practical workflow automations with n8n",
+  "Explore AI & ML for real-world applications",
+  "Share knowledge through tutorials and content",
+  "Learn new tools and frameworks continuously",
 ];
 
 export const achievements = [
   {
     title: "Projects Completed",
-    value: "50+",
-    desc: "Developed 50+ interactive motion and web projects for enterprise clients.",
+    value: "10+",
+    desc: "Built 15+ Data Science, Web Scraping, and JavaFX desktop projects for personal and academic purposes.",
     color: "yellow",
   },
   {
-    title: "Open Source Contributions",
-    value: "1.2k+",
-    desc: "Contributed to popular open-source projects, including motion and UI libraries.",
+    title: "Automation Workflows",
+    value: "5+",
+    desc: "Created 10+ automated workflows and pipelines using n8n to connect APIs, databases, and AI services.",
     color: "cyan",
   },
   {
-    title: "Speaker Engagements",
-    value: "10+",
-    desc: "Presented at international conferences like Adobe MAX and UXDX.",
+    title: "RAG Systems Experiments",
+    value: "3+",
+    desc: "Developed multiple Retrieval-Augmented Generation systems integrating external data sources with AI models.",
     color: "pink",
   },
   {
-    title: "Awards & Recognition",
-    value: "5",
-    desc: "Won multiple awards for innovative motion design and interactive experiences.",
+    title: "Learning Milestones",
+    value: "6+",
+    desc: "Completed courses and self-study projects in Data Science, AI, RAG, and Automation technologies.",
     color: "violet",
   },
 ];
 
 export const skills = [
   {
-    category: "Frontend",
+    category: "Programming & Desktop Apps",
     skills: [
-      "React / Next.js",
-      "Tailwind CSS / CSS Animations",
-      "Framer Motion",
-      "HTML / CSS / JS",
+      "Java / JavaFX - Desktop Applications",
+      "Python - Data Processing & Automation",
+      "Jupyter Notebook - Data Science & Visualization",
     ],
   },
   {
-    category: "Backend",
-    skills: ["Node.js / Express", "PostgreSQL / Prisma", "REST & GraphQL APIs"],
+    category: "Data & AI",
+    skills: [
+      "Data Analysis - Pandas & NumPy",
+      "Web Scraping - BeautifulSoup & Selenium",
+      "RAG Systems - AI & Retrieval-Augmented Generation",
+      "Machine Learning Basics",
+    ],
   },
   {
-    category: "Design & Tools",
-    skills: ["Figma / Motion Design", "Docker / Git", "Notion / VS Code"],
+    category: "Automation & Tools",
+    skills: [
+      "n8n - Workflow Automation",
+      "Git & GitHub - Version Control",
+      "VS Code - Code Editor",
+      "PostgreSQL / MySQL - Databases",
+      "Docker - Containerization",
+    ],
   },
   {
-    category: "Other",
-    skills: ["Agile / Scrum", "SEO Basics", "Performance Optimization"],
+    category: "Professional Skills",
+    skills: [
+      "Problem Solving & Logical Thinking",
+      "System Design & Architecture",
+      "Project Management - Agile",
+    ],
   },
 ];
 
 export const certificates = [
-  "Microsoft Certified: Power Platform App Maker",
-  "Adobe Certified Expert: After Effects",
-  "Frontend Developer Nanodegree - Udacity",
-  "Docker Essentials - Coursera",
+  "RAG System Trainee - ITI",
+  "Flutter Development - ITI",
+  "Network Infrastructure - NTI",
+  "Machine Learning - Oracle",
+  "Academic Excellence - Ranked 2nd in Class",
 ];
 
 export const animatedBlobs = [
