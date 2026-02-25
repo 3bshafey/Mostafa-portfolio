@@ -1,9 +1,10 @@
 import { Github, Linkedin, Twitter, Youtube } from "lucide-react";
 
+
 export const personalInfo = {
   name: "Mostafa Ayman",
-  role: "Data Science",
-  bio: "Hi, I’m James. I'm a Web Developer focuseHi, I’m Mostafa. I build desktop apps using JavaFX and work on Data Science, Web Scraping, RAG, and automation with n8n to create practical and interactive digital solutions.d on building fast, elegant, and thoughtful digital experiences. My work blends technical precision with a design-driven mindset to create websites that not only work well but feel great.",
+  role: "Data Science & Automation Developer",
+  bio: "Hi, I’m Mostafa. I build interactive desktop apps using JavaFX and work on Data Science, Web Scraping, RAG systems, and workflow automation with n8n to create practical, data-driven, and engaging digital solutions.",
   email: "moaymn707@gmail.com",
   location: "EGY",
 };
