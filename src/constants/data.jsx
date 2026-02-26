@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Github, Linkedin, Telegram, Reddit } from "lucide-react";
 
 
 export const personalInfo = {

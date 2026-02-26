@@ -34,10 +34,9 @@ function App() {
   useEffect(()=> {
     setMounted(true);
     setTime(new Date().toLocaleTimeString());
-    const timer = setInterval(
-      setTime(new Date().toLocaleTimeString()),
-      1000
-    );
+    const timer = setInterval(() => {
+      setTime(new Date().toLocaleTimeString());
+    }, 1000);
     return () => clearInterval(timer);
   }, [])
   
