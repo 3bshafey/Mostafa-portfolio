@@ -227,7 +227,7 @@ function App() {
                       <span
                         className="
                                 absolute left-0 -bottom-1 w-0 h-[2px]
-                                bg-gradient-to-r from-violet-500 to-cyan-500
+                                bg-linear-to-r from-violet-500 to-cyan-500
                                 transition-all duration-300
                                 group-hover:w-full
                               "
@@ -317,6 +317,45 @@ function App() {
                 </li>
               ))}
             </ul>
+          </motion.div>
+          <motion.div
+            variants={itemVariants}
+            className="card card-yellow row-span-3 sm:row-span-4 flex flex-col gap-4"
+          >
+            <h2 className="section-title">
+              <Trophy size={20} className="text-yellow-400" />
+              <span>Achievements & Metrics</span>
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-400">
+              {achievements.map((ach, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{ scale: 1.03 }}
+                  className="stats-box"
+                >
+                  <span
+                    className={`
+            font-bold text-xl
+            ${ach.color === "yellow" ? "text-yellow-400" :
+                        ach.color === "cyan" ? "text-cyan-400" :
+                          ach.color === "pink" ? "text-pink-400" :
+                            "text-violet-400"}
+          `}
+                  >
+                    {ach.value}
+                  </span>
+
+                  <h3 className="mt-1 font-medium text-white/90">
+                    {ach.name}
+                  </h3>
+
+                  <p className="mt-1 text-xs text-slate-400 leading-snug">
+                    {ach.desc}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </motion.main>
 
