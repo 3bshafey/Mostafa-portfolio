@@ -324,7 +324,7 @@ function App() {
           >
             <h2 className="section-title">
               <Trophy size={20} className="text-yellow-400" />
-              <span>Achievements & Metrics</span>
+              <span>Achievements</span>
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-400">
@@ -347,7 +347,7 @@ function App() {
                   </span>
 
                   <h3 className="mt-1 font-medium text-white/90">
-                    {ach.name}
+                    {ach.title}
                   </h3>
 
                   <p className="mt-1 text-xs text-slate-400 leading-snug">
@@ -356,6 +356,60 @@ function App() {
                 </motion.div>
               ))}
             </div>
+          </motion.div>
+          <motion.div
+            variants={itemVariants}
+            className="card card-cyan row-span-5 flex flex-col overflow-hidden"
+          >
+            <h2 className="section-title">
+              <User size={20} className="text-cyan-400" />
+              <span>Skills</span>
+            </h2>
+
+            <ul className="space-y-4 text-sm text-slate-400 overflow-y-auto max-h-[450px]">
+              {skills.map((group, i) => (
+                <li key={i} className="space-y-3">
+                  <span className="font-medium text-white/90">
+                    {group.category}
+                  </span>
+                  <ul className="ml-4 space-y-1">
+                    {group.skills.map((skill, j) => (
+                      <li
+                        key={j}
+                        className="hover-item mt-1"
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+          <motion.div
+            variants={itemVariants}
+            className="card card-orange row-span-2 flex flex-col gap-2 overflow-hidden group"
+          >
+            <h2 className="section-title">
+              <Trophy size={20} className="text-amber-400" />
+              <span>Certificates</span>
+            </h2>
+
+            <ul className="space-y-2 text-sm text-slate-400">
+              {certificates.map((cert, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <span
+                    className="
+            bullet w-2 h-2 rounded-full
+            bg-amber-600/50
+            group-hover:bg-amber-400
+            transition-colors
+          "
+                  />
+                  <span>{cert}</span>
+                </li>
+              ))}
+            </ul>
           </motion.div>
         </motion.main>
 
