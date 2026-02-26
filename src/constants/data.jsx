@@ -1,4 +1,4 @@
-import { Github, Linkedin, MessageCircle, MessageSquare } from "lucide-react";
+import { Github, Linkedin, MessageCircle, youtube, paperclip } from "lucide-react";
 
 
 export const personalInfo = {
@@ -31,9 +31,15 @@ export const socialLinks = [
     color: "hover:text-blue-500",
   },
   {
-    name: "Reddit",
-    icon: MessageSquare,
-    link: "https://www.reddit.com/user/Ok-Doubt-8985/",
+    name: "Youtube",
+    icon: youtube,
+    link: "https://www.youtube.com/watch?v=_m9rEfX-D3g",
+    color: "hover:text-red-400",
+  },
+  {
+    name: "CV",
+    icon: paperclip,
+    link: "",
     color: "hover:text-orange-500",
   },
 ];
