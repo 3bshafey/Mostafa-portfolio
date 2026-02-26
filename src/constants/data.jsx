@@ -1,4 +1,4 @@
-import { Github, Linkedin, Telegram, Reddit } from "lucide-react";
+import { Github, Linkedin, MessageCircle, MessageSquare } from "lucide-react";
 
 
 export const personalInfo = {
@@ -24,15 +24,15 @@ export const socialLinks = [
     link: "https://www.linkedin.com/in/3bshafey",
     color: "hover:text-blue-400",
   },
-   {
+  {
     name: "Telegram",
-    icon: Telegram,
+    icon: MessageCircle,
     link: "https://t.me/M3bshafey",
     color: "hover:text-blue-500",
   },
   {
     name: "Reddit",
-    icon: Reddit,
+    icon: MessageSquare,
     link: "https://www.reddit.com/user/Ok-Doubt-8985/",
     color: "hover:text-orange-500",
   },
