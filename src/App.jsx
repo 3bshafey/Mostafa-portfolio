@@ -190,8 +190,134 @@ function App() {
               </a>
             </div>
           </motion.div>
+          <motion.div
+            variants={itemVariants}
+            className="card card-violet md:col-span-1 row-span-3 flex flex-col justify-center gap-4"
+          >
+            <h2 className="section-title">
+              <User size={20} className="text-violet-400" />
+              <span>Social Links</span>
+            </h2>
 
+            <ul className="space-y-3">
+              {socialLinks.map((social, i) => (
+                <motion.li
+                  key={i}
+                  whileHover={{ x: 4 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <a
+                    href={social.link}
+                    target="_blank"
+                    className={`group flex gap-3 items-center text-slate-400 ${social.color}`}
+                  >
+                    <span
+                      className="
+                              p-2 rounded-lg bg-white/5
+                              group-hover:bg-white/10
+                              transition duration-300
+                              group-hover:scale-110
+                            "
+                    >
+                      <social.icon size={18} />
+                    </span>
 
+                    <span className="relative font-medium">
+                      {social.name}
+                      <span
+                        className="
+                                absolute left-0 -bottom-1 w-0 h-[2px]
+                                bg-gradient-to-r from-violet-500 to-cyan-500
+                                transition-all duration-300
+                                group-hover:w-full
+                              "
+                      />
+                    </span>
+                  </a>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+
+          <motion.div
+            variants={itemVariants}
+            className="card card-cyan md:col-span-1 row-span-4 flex flex-col space-y-3 px-3"
+          >
+            <h2 className="section-title">
+              <BriefcaseBusiness size={20} className="text-cyan-400" />
+              <span>Experience</span>
+            </h2>
+
+            <ul className="space-y-3 px-3 text-sm overflow-y-auto overflow-x-hidden">
+              {experiences.map((job, i) => (
+                <li key={i} className="soft-card group">
+                  <span className="text-white font-medium flex items-center gap-2">
+                    {job.title} - {job.company}
+                  </span>
+                  <span className="text-xs text-slate-500 mt-1">
+                    {job.period}
+                  </span>
+                  <p className="mt-2 text-slate-400 leading-relaxed">
+                    {job.desc}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+          <motion.div
+            variants={itemVariants}
+            className="card card-green row-span-3 flex flex-col justify-center gap-3 group"
+          >
+            <h2 className="section-title">
+              <BriefcaseBusiness size={20} className="text-green-400" />
+              <span>Favorite Tools</span>
+            </h2>
+
+            <ul className="space-y-2 text-sm">
+              {tools.map((tool, i) => (
+                <motion.li
+                  key={i}
+                  whileHover={{ x: 4 }}
+                  className="flex items-center gap-2 group"
+                >
+                  <span
+                    className="
+                      bullet w-2 h-2 rounded-full
+                      bg-green-400/50
+                      group-hover:bg-green-400
+                      transition-colors
+                    "
+                  />
+                  <span>{tool}</span>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+          <motion.div
+            variants={itemVariants}
+            className="card card-green row-span-2 flex flex-col justify-center group"
+          >
+            <h2 className="section-title">
+              <Trophy size={20} className="text-green-400" />
+              <span>Goals</span>
+            </h2>
+
+            <ul className="text-slate-400 text-sm space-y-2">
+              {goals.map((goal, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <span
+                    className="
+                      bullet mt-1 w-2 h-2 rounded-full
+                      bg-green-400/50
+                      group-hover:bg-green-400
+                      transition-colors
+                    "
+                  />
+                  <span>{goal}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
         </motion.main>
 
       </div>
