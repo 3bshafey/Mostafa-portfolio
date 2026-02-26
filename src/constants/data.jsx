@@ -107,7 +107,7 @@ export const achievements = [
     color: "cyan",
   },
   {
-    title: "RAG Systems Experiments",
+    title: "RAG Systems",
     value: "3+",
     desc: "Developed multiple Retrieval-Augmented Generation systems integrating external data sources with AI models.",
     color: "pink",
