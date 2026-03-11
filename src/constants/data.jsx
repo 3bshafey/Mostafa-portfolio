@@ -4,7 +4,8 @@ import { Github, Linkedin, MessageCircle, Youtube, Paperclip } from "lucide-reac
 export const personalInfo = {
   name: "Mostafa Ayman",
   role: "Data Science & Automation Developer",
-  bio: "Hi, I’m Mostafa. I build interactive desktop applications with JavaFX and work on data-driven systems including web scraping, data science, RAG systems, and workflow automation with n8n.I specialize in turning raw datasets into intelligent applications, automated workflows, and AI assistants that make data easier to search, understand, and use.",
+  bio: "Hi, I’m Mostafa. I build interactive desktop applications with JavaFX and work on data-driven systems including web scraping, data science, RAG systems, and workflow automation with n8n.",
+  usp: "I specialize in turning raw datasets into intelligent applications, automated workflows, and AI assistants that make data easier to search, understand, and use.",
   email: "moaymn707@gmail.com",
   location: "EGY",
 };

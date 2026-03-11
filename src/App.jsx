@@ -95,7 +95,7 @@ function App() {
 
           <motion.div variants={itemVariants}
             className="card card-cyan md:col-span-1
-            row-span-3 flex-col justify-centergap-3"
+            row-span-4 flex-col justify-centergap-3"
           >
             <img src={pp} className="w-[90px] h-[90px] rounded-full object-cover" alt="" />
             <br />
@@ -105,6 +105,10 @@ function App() {
             </h2>
             <p className="text-slate-300 text-sm leading-relaxed">
               {personalInfo.bio}
+            </p>
+            <br />
+            <p className="text-slate-300 text-sm leading-relaxed">
+              {personalInfo.usp}
             </p>
           </motion.div>
 
